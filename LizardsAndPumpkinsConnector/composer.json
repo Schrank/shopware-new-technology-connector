@@ -1,0 +1,34 @@
+{
+  "name": "lizards-and-pumpkins/shopware-new-technology-connector",
+  "description": "Lizards and Pumpkins Shopware Connector",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "shopware AG"
+    }
+  ],
+  "require": {
+    "shopware/platform": "dev-master",
+    "ext-curl": "*"
+  },
+  "extra": {
+    "shopware-plugin-class": "LizardsAndPumpkins\\Connector\\LizardsAndPumpkinsConnector",
+    "label": {
+      "de_DE": "Lizards & Pumpkins Connector",
+      "en_GB": "Lizards & Pumpkins Connector"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "LizardsAndPumpkins\\Connector\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "autoload": {
+      "psr-4": {
+        "LizardsAndPumpkins\\Connector\\": "tests/Suites/Unit/"
+      }
+    }
+  }
+}
